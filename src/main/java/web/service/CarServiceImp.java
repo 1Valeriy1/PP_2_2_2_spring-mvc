@@ -1,14 +1,13 @@
 package web.service;
 
-import web.controller.CarController;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import web.models.Car;
-
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
-
-public class CarServiceImp extends CarController implements CarService  {
+@Service
+public class CarServiceImp implements CarService  {
 
     List<Car> cars = Arrays.asList(
             new Car("Oka", "black", 1),
